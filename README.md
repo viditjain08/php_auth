@@ -9,25 +9,25 @@ A simple, secure login and signup system with PHP and MySQL with user account ve
 ![alt tag](images/3.png "Login Page with validation")
 ![alt tag](images/7.png "Login Page with validation")
 
-# INSTALLATION
-#Creating the MySQL Database
-CREATE TABLE `users` (
-  `user_id` int(11) NOT NULL,
-  `username` varchar(32) NOT NULL,
-  `password` varchar(32) NOT NULL,
-  `first_name` varchar(32) NOT NULL,
-  `last_name` varchar(32) NOT NULL,
-  `State` varchar(100) NOT NULL,
-  `email` varchar(1024) NOT NULL,
-  `email_code` varchar(32) NOT NULL,
-  `active` int(11) NOT NULL DEFAULT '0'
-)
-#Setup core/connect.php, core/database/connect.php, core/functions/connect.php, core/functions/users.php 
-<?php
-    //DATABASE CONNECTION VARIABLES
-    $servername = "localhost"; // Host name
-    $username = "user"; // Mysql username
-    $password = "password"; // Mysql password
-    $dbname = "users"; // Database name
+# INSTALLATION             
+#Creating the MySQL Database                                      
+CREATE TABLE `users` (                                                          
+  `user_id` int(11) NOT NULL,                                                
+  `username` varchar(32) NOT NULL,                                           
+  `password` varchar(32) NOT NULL,                                             
+  `first_name` varchar(32) NOT NULL,                                             
+  `last_name` varchar(32) NOT NULL,                                              
+  `State` varchar(100) NOT NULL,                                       
+  `email` varchar(1024) NOT NULL,                                          
+  `email_code` varchar(32) NOT NULL,                                      
+  `active` int(11) NOT NULL DEFAULT '0'                                  
+)                                          
+#Setup core/connect.php, core/database/connect.php,                                                                             core/functions/connect.php, core/functions/users.php 
+<?php                                    
+    //DATABASE CONNECTION VARIABLES                                 
+    $servername = "localhost"; // Host name                 
+    $username = "user"; // Mysql username                   
+    $password = "password"; // Mysql password                     
+    $dbname = "users"; // Database name                              
     
 #Setup php to be able to send mail using sendmail or postfix
